@@ -10,13 +10,13 @@
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function firstwp_setup() {
+function myfirstwp_setup() {
 	/*
 	 * Make theme available for translation.
 	 * If you're building a theme based on Twenty Seventeen, use a find and replace
-	 * to change 'firstwp' to the name of your theme in all the template files.
+	 * to change 'myfirstwp' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'firstwp' );
+	load_theme_textdomain( 'myfirstwp' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -36,13 +36,13 @@ function firstwp_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	add_image_size( 'firstwp-featured-image', 2000, 1200, true );
+	add_image_size( 'myfirstwp-featured-image', 2000, 1200, true );
 
-	add_image_size( 'firstwp-thumbnail-avatar', 100, 100, true );
+	add_image_size( 'myfirstwp-thumbnail-avatar', 100, 100, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'top'    => __( 'Top Menu', 'firstwp' ),
+		'top'    => __( 'Top Menu', 'myfirstwp' ),
 	) );
 
 	/*
@@ -85,6 +85,29 @@ function firstwp_setup() {
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, and column width.
 	 */
-	add_editor_style( array( 'assets/css/editor-style.css', firstwp_fonts_url() ) );
+	add_editor_style( array( 'assets/css/editor-style.css', myfirstwp_fonts_url() ) );
 }
-// add_action( 'after_setup_theme', 'firstwp_setup' );
+// add_action( 'after_setup_theme', 'myfirstwp_setup' );
+
+/**
+ * Set the content width in pixels, based on the theme's design and stylesheet.
+ *
+ * Priority 0 to make it available to lower priority callbacks.
+ *
+ * @global int $content_width
+ */
+function myfirstwp_content_width() {
+
+	$content_width = 1080;
+
+	/**
+	 * Filter My First WordPress content width of the theme.
+	 *
+	 * @since My First WordPress 1.0
+	 *
+	 * @param $content_width integer
+	 */
+	$GLOBALS['content_width'] = apply_filters( 'myfirstwp_content_width', $content_width );
+}
+add_action( 'after_setup_theme', 'myfirstwp_content_width', 0 );
+
