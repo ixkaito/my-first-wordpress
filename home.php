@@ -6,6 +6,7 @@
 	<meta name="description" content="フォトグラファー・山本徹のポートフォリオサイト">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="style.css">
+	<?php wp_head(); ?>
 </head>
 <body>
 	<header class="page-header">
@@ -160,7 +161,7 @@
 				<a href="#" class="nextpostlink" rel="next "><img class="arrow" src="images/arrow-right.png" srcset="images/arrow-right@2x.png 2x" alt=""></a>
 			</div>
 		</div>
-		
+
 		<div class="side-column">
 			<nav>
 				<div class="side-list category-nav">

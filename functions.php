@@ -104,3 +104,13 @@ function myfirstwp_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'myfirstwp_content_width', $content_width );
 }
 add_action( 'after_setup_theme', 'myfirstwp_content_width', 0 );
+
+/**
+ * Enqueue scripts and styles.
+ */
+function myfirstwp_scripts() {
+
+	// Theme stylesheet.
+	wp_enqueue_style( 'myfirstwp-style', get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'myfirstwp_scripts' );
