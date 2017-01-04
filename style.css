@@ -477,36 +477,36 @@ template {
 /*=======================================================
 WordPress Native Styles
 =======================================================*/
- 
+
 p {
-    display: block;
-    margin: 1.3em 0;
+	display: block;
+	margin: 1.3em 0;
 }
 strong { font-weight: bold; }
 em { font-style: italic; }
 blockquote {
-    display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 40px;
-    -webkit-margin-end: 40px;
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 40px;
+	-webkit-margin-end: 40px;
 }
- 
+
 /* img */
- 
+
 .aligncenter {
-    display: block;
-    margin: 0 auto;
+	display: block;
+	margin: 0 auto;
 }
 .alignright { float: right; }
 .alignleft { float: left; }
- 
+
 img[class*="wp-image-"],
 img[class*="attachment-"] {
-    height: auto;
-    max-width: 100%;
+	height: auto;
+	max-width: 100%;
 }
- 
+
 /*=======================================================
 body
 =======================================================*/
@@ -553,8 +553,8 @@ h2 {
 }
 
 p {
-    display: block;
-    margin: 1.3em 0;
+	display: block;
+	margin: 1.3em 0;
 }
 
 strong {
@@ -565,11 +565,11 @@ strong {
 em { font-style: italic;}
 
 blockquote {
-    display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 40px;
-    -webkit-margin-end: 40px;
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 40px;
+	-webkit-margin-end: 40px;
 }
 
 
@@ -592,7 +592,7 @@ layout
 
 .content-area.has-side-col:after {
 	content: "";
-	display: block; 
+	display: block;
 	clear: both;
 }
 
@@ -684,7 +684,7 @@ generic parts
 	padding-bottom: 10px;
 	font-size: 28px;
 	font-weight: normal;
-	
+
 }
 
 .box-content {
@@ -732,7 +732,7 @@ generic parts
 
 .item-archive:after {
 	content: "";
-	display: block; 
+	display: block;
 	clear: both;
 }
 
@@ -883,7 +883,7 @@ generic parts
 }
 
 @media screen and (max-width: 39.9375em) {
-	
+
 .box-heading {
 	padding: 30px 20px;
 }
@@ -947,7 +947,7 @@ header and global-nav
 
 .header-area {
 	min-height: 110px;
-	background-color: #707070;	
+	background-color: #707070;
 }
 
 .panel-site-title {
@@ -1078,7 +1078,7 @@ header and global-nav
 
 .header-area {
 	min-height: 70px;
-	background-color: #707070;	
+	background-color: #707070;
 }
 
 .hero {
@@ -1135,9 +1135,9 @@ header and global-nav
 .header-area {
 	min-height: auto;
 	padding: 10px 0;
-	background-color: #707070;	
+	background-color: #707070;
 }
-	
+
 .panel-site-title {
 	position: static;
 	width: 100%;
@@ -1297,7 +1297,7 @@ comment
 
 .item-comment:after {
 	content: "";
-	display: block; 
+	display: block;
 	clear: both;
 }
 
