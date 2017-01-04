@@ -80,14 +80,8 @@ function myfirstwp_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
-
-	/*
-	 * This theme styles the visual editor to resemble the theme style,
-	 * specifically font, colors, and column width.
-	 */
-	add_editor_style( array( 'assets/css/editor-style.css', myfirstwp_fonts_url() ) );
 }
-// add_action( 'after_setup_theme', 'myfirstwp_setup' );
+add_action( 'after_setup_theme', 'myfirstwp_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -110,4 +104,3 @@ function myfirstwp_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'myfirstwp_content_width', $content_width );
 }
 add_action( 'after_setup_theme', 'myfirstwp_content_width', 0 );
-
