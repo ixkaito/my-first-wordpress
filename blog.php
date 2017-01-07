@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: ブログアーカイブ
+ */
+get_header(); ?>
 
 <div class="page-title">
 	<h1>ブログ</h1>
