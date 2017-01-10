@@ -19,118 +19,31 @@
 			<?php endif; ?>
 
 			<div class="box-content">
-			<ul class="archive">
-				<li class="item-archive">
-					<div class="time-and-thumb-archive">
-						<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
-						<p class="thumb thumb-archive"><img src="http://placehold.it/190x130"></p>
-					</div>
-					<div class="data-archive">
-						<p class="list-categories-archive">カテゴリ名</p>
-						<h2 class="title-archive">記事タイトル記事タイトル記事タイトル記事タイトル</h2>
-						<p class="list-tags-archive">タグ, タグ, タグ, タグ</p>
-					</div>
-				</li>
-				<li class="item-archive">
-					<div class="time-and-thumb-archive">
-						<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
-						<p class="thumb thumb-archive"><img src="http://placehold.it/190x130"></p>
-					</div>
-					<div class="data-archive">
-						<p class="list-categories-archive">カテゴリ名</p>
-						<h2 class="title-archive">記事タイトル記事タイトル記事タイトル記事タイトル</h2>
-						<p class="list-tags-archive">タグ, タグ, タグ, タグ</p>
-					</div>
-				</li>
-				<li class="item-archive">
-					<div class="time-and-thumb-archive">
-						<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
-						<p class="thumb thumb-archive"><img src="http://placehold.it/190x130"></p>
-					</div>
-					<div class="data-archive">
-						<p class="list-categories-archive">カテゴリ名</p>
-						<h2 class="title-archive">記事タイトル記事タイトル記事タイトル記事タイトル</h2>
-						<p class="list-tags-archive">タグ, タグ, タグ, タグ</p>
-					</div>
-				</li>
-				<li class="item-archive">
-					<div class="time-and-thumb-archive">
-						<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
-						<p class="thumb thumb-archive"><img src="http://placehold.it/190x130"></p>
-					</div>
-					<div class="data-archive">
-						<p class="list-categories-archive">カテゴリ名</p>
-						<h2 class="title-archive">記事タイトル記事タイトル記事タイトル記事タイトル</h2>
-						<p class="list-tags-archive">タグ, タグ, タグ, タグ</p>
-					</div>
-				</li>
-				<li class="item-archive">
-					<div class="time-and-thumb-archive">
-						<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
-						<p class="thumb thumb-archive"><img src="http://placehold.it/190x130"></p>
-					</div>
-					<div class="data-archive">
-						<p class="list-categories-archive">カテゴリ名</p>
-						<h2 class="title-archive">記事タイトル記事タイトル記事タイトル記事タイトル</h2>
-						<p class="list-tags-archive">タグ, タグ, タグ, タグ</p>
-					</div>
-				</li>
-				<li class="item-archive">
-					<div class="time-and-thumb-archive">
-						<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
-						<p class="thumb thumb-archive"><img src="http://placehold.it/190x130"></p>
-					</div>
-					<div class="data-archive">
-						<p class="list-categories-archive">カテゴリ名</p>
-						<h2 class="title-archive">記事タイトル記事タイトル記事タイトル記事タイトル</h2>
-						<p class="list-tags-archive">タグ, タグ, タグ, タグ</p>
-					</div>
-				</li>
-				<li class="item-archive">
-					<div class="time-and-thumb-archive">
-						<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
-						<p class="thumb thumb-archive"><img src="http://placehold.it/190x130"></p>
-					</div>
-					<div class="data-archive">
-						<p class="list-categories-archive">カテゴリ名</p>
-						<h2 class="title-archive">記事タイトル記事タイトル記事タイトル記事タイトル</h2>
-						<p class="list-tags-archive">タグ, タグ, タグ, タグ</p>
-					</div>
-				</li>
-				<li class="item-archive">
-					<div class="time-and-thumb-archive">
-						<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
-						<p class="thumb thumb-archive"><img src="http://placehold.it/190x130"></p>
-					</div>
-					<div class="data-archive">
-						<p class="list-categories-archive">カテゴリ名</p>
-						<h2 class="title-archive">記事タイトル記事タイトル記事タイトル記事タイトル</h2>
-						<p class="list-tags-archive">タグ, タグ, タグ, タグ</p>
-					</div>
-				</li>
-				<li class="item-archive">
-					<div class="time-and-thumb-archive">
-						<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
-						<p class="thumb thumb-archive"><img src="http://placehold.it/190x130"></p>
-					</div>
-					<div class="data-archive">
-						<p class="list-categories-archive">カテゴリ名</p>
-						<h2 class="title-archive">記事タイトル記事タイトル記事タイトル記事タイトル</h2>
-						<p class="list-tags-archive">タグ, タグ, タグ, タグ</p>
-					</div>
-				</li>
-				<li class="item-archive">
-					<div class="time-and-thumb-archive">
-						<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
-						<p class="thumb thumb-archive"><img src="http://placehold.it/190x130"></p>
-					</div>
-					<div class="data-archive">
-						<p class="list-categories-archive">カテゴリ名</p>
-						<h2 class="title-archive">記事タイトル記事タイトル記事タイトル記事タイトル</h2>
-						<p class="list-tags-archive">タグ, タグ, タグ, タグ</p>
-					</div>
-				</li>
-			</ul>
+
+				<?php if ( have_posts() ) : ?>
+
+					<ul class="archive">
+
+						<?php while ( have_posts() ) : the_post(); ?>
+
+							<li class="item-archive">
+								<div class="time-and-thumb-archive">
+									<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
+									<p class="thumb thumb-archive"><img src="http://placehold.it/190x130"></p>
+								</div>
+								<div class="data-archive">
+									<p class="list-categories-archive">カテゴリ名</p>
+									<h2 class="title-archive">記事タイトル記事タイトル記事タイトル記事タイトル</h2>
+									<p class="list-tags-archive">タグ, タグ, タグ, タグ</p>
+								</div>
+							</li>
+
+						<?php endwhile; ?>
+
+					</ul>
+
+				<?php endif; ?>
+
 			</div>
 		</div>
 		<div class="wp-pagenavi">
