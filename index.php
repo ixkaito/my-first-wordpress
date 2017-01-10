@@ -1,12 +1,23 @@
 <?php get_header(); ?>
 
-<div class="page-title">
-	<h1>ブログ</h1>
-</div>
+<?php if ( is_home() && ! is_front_page() ) : ?>
+	<div class="page-title">
+		<h1><?php single_post_title(); ?></h1>
+	</div>
+<?php else : ?>
+	<div class="hero"></div>
+<?php endif; ?>
+
 <div class="content-area has-side-col">
 	<div class="main-column">
 		<div class="content-box">
-			<h2 class="box-heading">blog</h2>
+
+			<?php if ( is_home() && ! is_front_page() ) : ?>
+				<h2 class="box-heading"><?php single_post_title(); ?></h2>
+			<?php else : ?>
+				<h2 class="box-heading"><?php _e( 'Posts', 'firstwp' ); ?></h2>
+			<?php endif; ?>
+
 			<div class="box-content">
 			<ul class="archive">
 				<li class="item-archive">
