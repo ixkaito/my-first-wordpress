@@ -18,15 +18,15 @@
 
 		<div class="header-area">
 
-			<?php if ( has_nav_menu( 'top' ) ) : ?>
-				<nav class="global-nav">
-					<ul>
-						<li class="item-global-nav"><a href="portfolio.html">ポートフォリオ<span class="item-global-nav-en">Photographs</span></a></li>
-						<li class="item-global-nav"><a href="profile.html">プロフィール<span class="item-global-nav-en">Profile</span></a></li>
-						<li class="item-global-nav"><a href="home.html">ブログ<span class="item-global-nav-en">Blog</span></a></li>
-						<li class="item-global-nav"><a href="contact.html">お問い合わせ<span class="item-global-nav-en">Contact</span></a></li>
-					</ul>
-				</nav>
+			<?php if ( has_nav_menu( 'global' ) ) : ?>
+
+				<?php wp_nav_menu( array(
+					'theme_location'  => 'global',
+					'container'       => 'nav',
+					'container_class' => 'global-nav',
+					'menu_id'         => 'global-menu',
+				) ); ?>
+
 			<?php endif; ?>
 
 		</div>
