@@ -28,13 +28,13 @@
 
 							<li class="item-archive">
 								<div class="time-and-thumb-archive">
-									<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
+									<time class="pub-date" datetime="<?php echo get_the_date( DATE_W3C ); ?>"><?php echo get_the_date(); ?></time>
 									<p class="thumb thumb-archive"><img src="http://placehold.it/190x130"></p>
 								</div>
 								<div class="data-archive">
-									<p class="list-categories-archive">カテゴリ名</p>
-									<h2 class="title-archive">記事タイトル記事タイトル記事タイトル記事タイトル</h2>
-									<p class="list-tags-archive">タグ, タグ, タグ, タグ</p>
+									<p class="list-categories-archive"><?php the_category( ', ' ); ?></p>
+									<h2 class="title-archive"><?php the_title(); ?></h2>
+									<p class="list-tags-archive"><?php the_tags(); ?></p>
 								</div>
 							</li>
 
