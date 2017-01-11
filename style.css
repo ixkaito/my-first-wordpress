@@ -998,31 +998,40 @@ header and global-nav
 	font-size: 16px;
 }
 
-.global-nav ul {
-	margin: 0;
-	padding-top: 10px;
-	text-align: right;
+.global-nav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
 }
 
-.global-nav ul:before {
-	content: "";
-	display: block;
-	position: relative;
-	top: 36px;
-	width: 100%;
-	border-bottom: solid 2px #EBFF00;
+.global-nav ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .global-nav ul li {
-	display: inline-block;
 	font-size: 18px;
 	font-weight: bold;
-	margin-right: 30px;
 }
 
 .global-nav ul li a {
-	display: block;
+	border-bottom: 5px solid #E0E0E0;
 	color: #FFF;
+	display: block;
+	line-height: 30px;
+	padding: 40px 15px;
+}
+
+.global-nav ul li:last-child a {
+	padding-right: 30px;
+}
+
+.global-nav ul li.current-menu-item a {
+	border-bottom-color: #EBFF00;
 }
 
 .global-nav ul li a:hover {
