@@ -769,7 +769,7 @@ generic parts
 	background-color: #707070;
 	transform: rotate(270deg);
 	transform-origin: 15px 15px;
-	font-size: 13px;
+	font-size: 10px;
 }
 
 .pub-date:before {
