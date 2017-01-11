@@ -789,19 +789,19 @@ generic parts
 	margin: 0;
 	padding-left: 240px;
 	background-color: #E0E0E0;
+	line-height: 28px;
 }
 
 .title-archive {
 	margin: 0;
-	padding-top: 10px;
-	padding-left: 240px;
+	padding: 10px 0 10px 240px;
 	line-height: 1.4;
 	font-size: 21px;
 	font-weight: normal;
+	min-height: 58px;
 }
 
 .list-tags-archive {
-	position: absolute;
 	bottom: 0;
 	width: 385px;
 	margin: 0;
@@ -812,6 +812,7 @@ generic parts
 	text-align: right;
 	color: #707070;
 	font-size: 14px;
+	line-height: 24px;
 }
 
 .nav-to-archives {
