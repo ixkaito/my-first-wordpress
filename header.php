@@ -11,12 +11,12 @@
 
 	<header class="page-header">
 
-		<div class="panel-site-title">
-			<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
-			<p class="site-subtitle"><?php bloginfo( 'description' ); ?></p>
-		</div>
-
 		<div class="header-area">
+
+			<div class="panel-site-title">
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
+				<p class="site-subtitle"><?php bloginfo( 'description' ); ?></p>
+			</div>
 
 			<?php if ( has_nav_menu( 'global' ) ) : ?>
 
