@@ -33,7 +33,7 @@
 								</div>
 								<div class="data-archive">
 									<p class="list-categories-archive"><?php the_category( ', ' ); ?></p>
-									<h2 class="title-archive"><?php the_title(); ?></h2>
+									<h2 class="title-archive"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 									<p class="list-tags-archive"><?php the_tags(); ?></p>
 								</div>
 							</li>
