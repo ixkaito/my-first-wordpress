@@ -1268,6 +1268,7 @@ footer
 .banner-area {
 	width: 1140px;
 	margin: 20px auto 30px;
+	min-height: 110px;
 	text-align: center;
 	position: relative;
 }

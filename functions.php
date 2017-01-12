@@ -120,6 +120,17 @@ function myfirstwp_widgets_init() {
 		'before_title'  => '<h2 class="box-heading box-heading-sidebar">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Footer', 'myfirstwp' ),
+		'id'            => 'footer',
+		'description'   => __( 'Add widgets here to appear in your footer.', 'myfirstwp' ),
+		'before_widget' => '<div id="%1$s" class="footer-widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="box-heading box-heading-footer">',
+		'after_title'   => '</h2>',
+	) );
+
 }
 add_action( 'widgets_init', 'myfirstwp_widgets_init' );
 
