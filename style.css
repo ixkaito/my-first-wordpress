@@ -813,6 +813,7 @@ generic parts
 	color: #707070;
 	font-size: 14px;
 	line-height: 24px;
+	min-height: 24px;
 }
 
 .nav-to-archives {
