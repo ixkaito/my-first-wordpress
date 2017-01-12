@@ -727,6 +727,7 @@ generic parts
 
 .box-content,
 .widget_search,
+.widget_calendar,
 .sidebar-widget ul {
 	padding: 30px;
 	background-color: #FFF;
@@ -749,7 +750,8 @@ generic parts
 	border-radius: 0 0 20px 0;
 }
 
-.widget_search {
+.widget_search,
+.widget_calendar {
 	border-radius: 20px 0 20px 0;
 }
 
@@ -757,10 +759,6 @@ generic parts
 .widget_search,
 .sidebar-widget ul > *:first-child {
 	margin: 0;
-}
-
-.sidebar-widget {
-	margin-bottom: 20px;
 }
 
 .archive {
@@ -1339,6 +1337,23 @@ sidebar
 
 .sidebar-widget ul a {
 	color: #95989A;
+}
+
+.sidebar-widget {
+	margin-bottom: 20px;
+}
+
+.widget_calendar table {
+	width: 100%;
+	text-align: center;
+}
+
+.widget_calendar table #prev {
+	text-align: left;
+}
+
+.widget_calendar table #next {
+	text-align: right;
 }
 
 /*=======================================================
