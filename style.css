@@ -641,7 +641,7 @@ layout
 	float: none;
 }
 
-.banner-area {
+.footer-widget-area {
 	width: 98%;
 	padding: 30px 1%;
 }
@@ -713,7 +713,8 @@ generic parts
 	font-size: 28px;
 }
 
-.box-heading.box-heading-sidebar {
+.box-heading.box-heading-sidebar,
+.box-heading.box-heading-footer {
 	font-size: 24px;
 }
 
@@ -726,9 +727,10 @@ generic parts
 }
 
 .box-content,
-.widget_search,
-.widget_calendar,
-.sidebar-widget ul {
+.searchform > div,
+.calendar_wrap,
+.sidebar-widget ul,
+.footer-widget ul {
 	padding: 30px;
 	background-color: #FFF;
 }
@@ -746,12 +748,15 @@ generic parts
 }
 
 .box-content.radius-br,
-.sidebar-widget ul {
+.box-heading + .calendar_wrap,
+.box-heading + .searchform > div,
+.sidebar-widget .box-heading + ul {
 	border-radius: 0 0 20px 0;
 }
 
-.widget_search,
-.widget_calendar {
+.searchform > div,
+.calendar_wrap,
+.sidebar-widget ul {
 	border-radius: 20px 0 20px 0;
 }
 
@@ -1263,28 +1268,39 @@ header and global-nav
 footer
 =======================================================*/
 
-.banner-area {
+.footer-widget-area {
 	width: 1140px;
 	margin: 20px auto 30px;
 	min-height: 110px;
-	text-align: center;
 	position: relative;
 }
 
-.banner-list {
+.footer-widgets {
 	margin: 0;
 	padding: 0;
-
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 }
 
-.banner-list li {
-	display: inline-block;
+.footer-widget {
 	margin: 10px;
+	width: 320px;
+}
+
+.footer-widget .searchform > div,
+.footer-widget .calendar_wrap,
+.footer-widget .textwidget,
+.footer-widget ul {
 	border-bottom: solid 6px #EBFF00;
 	border-bottom-right-radius: 10px;
 }
 
-.banner-list li img {
+.footer-widget ul {
+	margin: 0;
+}
+
+.footer-widget img {
 	vertical-align: top;
 }
 
@@ -1319,7 +1335,7 @@ footer
 
 @media screen and (max-width: 63.9375em) {
 
-.banner-area {
+.footer-widget-area {
 	width: 98%;
 	padding: 0 1%;
 }
