@@ -947,6 +947,10 @@ generic parts
 header and global-nav
 =======================================================*/
 
+.page-header {
+	position: relative;
+}
+
 .header-area {
 	min-height: 110px;
 	background-color: #707070;
