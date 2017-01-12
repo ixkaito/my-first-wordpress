@@ -46,19 +46,13 @@
 
 			</div>
 		</div>
-		<div class="wp-pagenavi">
-			<a href="#" class="previouspostslink" rel="prev "><img class="arrow" src="images/arrow-left.png" srcset="images/arrow-left@2x.png 2x" alt=""></a>
-			<a class="page larger" href="#">1</a>
-			<a class="page larger" href="#">2</a>
-			<a class="page larger" href="#">3</a>
-			<a class="page larger" href="#">4</a>
-			<a class="page larger" href="#">5</a>
-			<span class="extend">...</span>
-			<a class="page larger" href="#">10</a>
-			<a class="page larger" href="#">20</a>
-			<a class="page larger" href="#">30</a>
-			<a href="#" class="nextpostlink" rel="next "><img class="arrow" src="images/arrow-right.png" srcset="images/arrow-right@2x.png 2x" alt=""></a>
-		</div>
+
+		<?php the_posts_pagination( array(
+			'mid_size' => 5,
+			'prev_text' => '<img class="arrow" src="' . get_theme_file_uri( '/images/arrow-left.png' ) . '" srcset="' . get_theme_file_uri( '/images/arrow-left@2x.png' ) . ' 2x" alt="">',
+			'next_text' => '<img class="arrow" src="' . get_theme_file_uri( '/images/arrow-right.png' ) . '" srcset="' . get_theme_file_uri( '/images/arrow-right@2x.png' ) . ' 2x" alt="">',
+		) ); ?>
+
 	</div>
 
 	<div class="side-column">
