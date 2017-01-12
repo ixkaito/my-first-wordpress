@@ -106,6 +106,24 @@ function myfirstwp_content_width() {
 add_action( 'after_setup_theme', 'myfirstwp_content_width', 0 );
 
 /**
+ * Register widget area.
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ */
+function myfirstwp_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Sidebar', 'myfirstwp' ),
+		'id'            => 'sidebar',
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'myfirstwp' ),
+		'before_widget' => '<div id="%1$s" class="sidebar-widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="box-heading box-heading-sidebar">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'myfirstwp_widgets_init' );
+
+/**
  * Enqueue scripts and styles.
  */
 function myfirstwp_scripts() {
