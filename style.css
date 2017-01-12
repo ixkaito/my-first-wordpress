@@ -816,6 +816,10 @@ generic parts
 	min-height: 24px;
 }
 
+.list-tags-archive a {
+	display: inline-block;
+}
+
 .nav-to-archives {
 	margin-top: 50px;
 }
