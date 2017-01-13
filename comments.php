@@ -7,7 +7,7 @@ if ( post_password_required() ) {
 <?php if ( have_comments() ) : ?>
 	<div class="box-generic">
 		<div class="box-content box-comment-display">
-			<h2>コメントとトラックバック</h2>
+			<h2><?php _e( 'Comments' ); ?></h2>
 			<ul class="comment-list">
 				<?php
 					wp_list_comments( array(
@@ -18,6 +18,7 @@ if ( post_password_required() ) {
 			</ul>
 		</div>
 	</div>
+
 <?php endif; ?>
 
 	<div class="box-generic">
