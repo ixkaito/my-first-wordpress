@@ -26,7 +26,7 @@
 					<div class="related-posts">
 						<h2>関連する記事</h2>
 						<ul class="archive">
-							<li class="item-archive">
+							<li class="item-archive has-post-thumbnail">
 								<div class="time-and-thumb-archive">
 									<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
 									<p class="thumb thumb-archive"><a href="single.html"><img src="http://placehold.it/190x130"></a></p>
@@ -37,7 +37,7 @@
 									<p class="list-tags-archive"><a href="archive.html">タグ</a>, <a href="archive.html">タグ</a>, <a href="archive.html">タグ</a>, <a href="archive.html">タグ</a></p>
 								</div>
 							</li>
-							<li class="item-archive">
+							<li class="item-archive has-post-thumbnail">
 								<div class="time-and-thumb-archive">
 									<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
 									<p class="thumb thumb-archive"><a href="single.html"><img src="http://placehold.it/190x130"></a></p>
