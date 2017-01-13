@@ -38,7 +38,7 @@ function myfirstwp_setup() {
 
 	add_image_size( 'myfirstwp-featured-image', 190, 130, true );
 
-	add_image_size( 'myfirstwp-thumbnail-avatar', 100, 100, true );
+	add_image_size( 'myfirstwp-thumbnail-avatar', 130, 130, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
