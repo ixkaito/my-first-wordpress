@@ -1,17 +1,17 @@
 <?php get_header(); ?>
 
-<?php if ( '' !== get_the_post_thumbnail() ) : ?>
-	<div class="hero eyecatch">
-		<img src="http://placehold.it/1200x630">
-	</div>
-<?php endif; ?>
+<?php while ( have_posts() ) : the_post(); ?>
 
-<div class="content-area has-side-col">
-	<div class="main-column">
-		<div class="box-generic">
+	<?php if ( get_the_post_thumbnail() ) : ?>
+		<div class="hero eyecatch">
+			<?php the_post_thumbnail(); ?>
+		</div>
+	<?php endif; ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+	<div class="content-area has-side-col">
+		<div class="main-column">
 
+			<div class="box-generic">
 				<h1 class="box-heading box-heading-article"><?php the_title(); ?></h1>
 				<div class="box-content">
 					<article class="entry">
@@ -51,65 +51,65 @@
 						</ul>
 					</div>
 				</div>
+			</div>
 
-			<?php endwhile; ?>
+			<div class="box-generic">
+				<div class="box-content box-comment-display">
+					<h2>コメントとトラックバック</h2>
+					<ul class="comment-list">
 
-		</div>
-		<div class="box-generic">
-			<div class="box-content box-comment-display">
-				<h2>コメントとトラックバック</h2>
-				<ul class="comment-list">
-
-					<li class="item-comment comment depth-1 parent">
-						<div class="time-and-thumb-comment">
-							<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
-							<p class="thumb thumb-comment"><img src="http://placehold.it/130x130"></p>
-						</div>
-						<div class="data-comment">
-							<div class="comment-author">WordPressコメントの投稿者</div>
-							<div class="comment-body">
-								<p>こんにちは、これはコメントです。</p>
+						<li class="item-comment comment depth-1 parent">
+							<div class="time-and-thumb-comment">
+								<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
+								<p class="thumb thumb-comment"><img src="http://placehold.it/130x130"></p>
 							</div>
-							<div class="reply"><a href="#">返信</a></div>
-						</div>
-						<ul class="children">
-							<li class="item-comment comment depth-1 parent">
-								<div class="time-and-thumb-comment">
-									<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
-									<p class="thumb thumb-comment"><img src="http://placehold.it/130x130"></p>
+							<div class="data-comment">
+								<div class="comment-author">WordPressコメントの投稿者</div>
+								<div class="comment-body">
+									<p>こんにちは、これはコメントです。</p>
 								</div>
-								<div class="data-comment">
-									<div class="comment-author">WordPressコメントの投稿者</div>
-									<div class="comment-body">
-										<p>こんにちは、これはコメントです。<br />
-										コメントの承認、編集、削除を始めるにはダッシュボードの「コメント画面」にアクセスしてください。<br />
-										コメントのアバターは「Gravatar」から取得されます。</p>
+								<div class="reply"><a href="#">返信</a></div>
+							</div>
+							<ul class="children">
+								<li class="item-comment comment depth-1 parent">
+									<div class="time-and-thumb-comment">
+										<time class="pub-date" datetime="2011-12-03">Sep 8, 2016</time>
+										<p class="thumb thumb-comment"><img src="http://placehold.it/130x130"></p>
 									</div>
-									<div class="reply"><a href="#">返信</a></div>
-								</div>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
+									<div class="data-comment">
+										<div class="comment-author">WordPressコメントの投稿者</div>
+										<div class="comment-body">
+											<p>こんにちは、これはコメントです。<br />
+											コメントの承認、編集、削除を始めるにはダッシュボードの「コメント画面」にアクセスしてください。<br />
+											コメントのアバターは「Gravatar」から取得されます。</p>
+										</div>
+										<div class="reply"><a href="#">返信</a></div>
+									</div>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div class="box-generic">
-			<div class="box-content box-comment-input">
-				<h2>コメントをどうぞ</h2>
-				<p>メールアドレスが公開されることはありません。</p>
-				<form action="#" class="comment-form">
-					<p class="comment-notes">
+			<div class="box-generic">
+				<div class="box-content box-comment-input">
+					<h2>コメントをどうぞ</h2>
+					<p>メールアドレスが公開されることはありません。</p>
+					<form action="#" class="comment-form">
+						<p class="comment-notes">
 
-					</p>
-				</form>
+						</p>
+					</form>
+				</div>
 			</div>
+
 		</div>
+
+		<?php get_sidebar(); ?>
 
 	</div>
 
-	<?php get_sidebar(); ?>
-
-</div>
+<?php endwhile; ?>
 
 <?php get_footer();

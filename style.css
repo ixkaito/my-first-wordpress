@@ -1139,6 +1139,7 @@ header and global-nav
 
 .hero.eyecatch img {
 	max-height: 530px;
+	width: auto;
 	border-bottom-right-radius: 30px;
 }
 
