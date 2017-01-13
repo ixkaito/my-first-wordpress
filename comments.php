@@ -7,7 +7,7 @@ if ( post_password_required() ) {
 <?php if ( have_comments() ) : ?>
 	<div class="box-generic">
 		<div class="box-content box-comment-display">
-			<h2><?php _e( 'Comments' ); ?></h2>
+			<h2><?php _e( 'Comments and Trackbacks', 'myfirstwp' ); ?></h2>
 			<ul class="comment-list">
 				<?php
 					wp_list_comments( array(
@@ -21,14 +21,8 @@ if ( post_password_required() ) {
 
 <?php endif; ?>
 
-	<div class="box-generic">
-		<div class="box-content box-comment-input">
-			<h2>コメントをどうぞ</h2>
-			<p>メールアドレスが公開されることはありません。</p>
-			<form action="#" class="comment-form">
-				<p class="comment-notes">
-
-				</p>
-			</form>
-		</div>
+<div class="box-generic">
+	<div class="box-content box-comment-input">
+		<?php comment_form(); ?>
 	</div>
+</div>

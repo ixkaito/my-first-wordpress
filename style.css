@@ -1447,6 +1447,13 @@ comment
 	font-size: 14px;
 }
 
+.comment-reply-title {
+	margin-top: 0;
+}
+
+.comment-form-comment label {
+	display: block;
+}
 
 @media screen and (max-width: 39.9375em) {
 
