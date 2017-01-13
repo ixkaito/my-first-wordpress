@@ -21,8 +21,10 @@ if ( post_password_required() ) {
 
 <?php endif; ?>
 
-<div class="box-generic">
-	<div class="box-content box-comment-input">
-		<?php comment_form(); ?>
+<?php if ( comments_open() ) : ?>
+	<div class="box-generic">
+		<div class="box-content box-comment-input">
+			<?php comment_form(); ?>
+		</div>
 	</div>
-</div>
+<?php endif;
