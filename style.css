@@ -1397,9 +1397,12 @@ comment
 	list-style: none;
 }
 
+.comment-list .comment {
+	min-height: 150px;
+}
+
 .comment-body {
 	font-size: 14px;
-	min-height: 130px;
 	margin-bottom: 30px;
 }
 
