@@ -615,6 +615,12 @@ layout
 	margin: 0 auto;
 }
 
+.text-body:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 .text-body {
