@@ -18,10 +18,10 @@
 						<?php the_content(); ?>
 					</article>
 					<div class="meta-data">
-						<time class="meta meta-entry-date">2016.11.12</time>
-						<p class="meta meta-author">著者名</p>
-						<p class="meta meta-cat">カテゴリ名</p>
-						<p class="meta meta-tag">タグ, タグ, タグ, タグ</p>
+						<time class="meta meta-entry-date" datetime="<?php echo get_the_date( DATE_W3C ); ?>"><?php echo get_the_date(); ?></time>
+						<p class="meta meta-author"><?php the_author_posts_link(); ?></p>
+						<p class="meta meta-cat"><?php the_category( ', ' ); ?></p>
+						<p class="meta meta-tag"><?php the_tags(); ?></p>
 					</div>
 					<div class="related-posts">
 						<h2>関連する記事</h2>
