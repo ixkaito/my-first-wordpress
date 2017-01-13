@@ -1090,6 +1090,7 @@ header and global-nav
 .global-nav ul li {
 	font-size: 18px;
 	font-weight: bold;
+	margin-left: -15px;
 }
 
 .global-nav ul li a {
@@ -1098,9 +1099,6 @@ header and global-nav
 	display: block;
 	line-height: 30px;
 	padding: 40px 15px;
-}
-
-.global-nav ul li:last-child a {
 	padding-right: 30px;
 }
 
