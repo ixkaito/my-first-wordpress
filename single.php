@@ -1,8 +1,11 @@
 <?php get_header(); ?>
 
-<div class="hero eyecatch">
-	<img src="http://placehold.it/1200x630">
-</div>
+<?php if ( '' !== get_the_post_thumbnail() ) : ?>
+	<div class="hero eyecatch">
+		<img src="http://placehold.it/1200x630">
+	</div>
+<?php endif; ?>
+
 <div class="content-area has-side-col">
 	<div class="main-column">
 		<div class="box-generic">

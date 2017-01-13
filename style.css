@@ -791,10 +791,10 @@ generic parts
 	top: 0;
 	left: 0;
 	z-index: 10;
-	width: 190px;
 	padding-left: 30px;
 	color: #FFF;
 	font-weight: bold;
+	min-height: 130px;
 }
 
 .thumb-archive {
@@ -837,14 +837,14 @@ generic parts
 
 .list-categories-archive {
 	margin: 0;
-	padding-left: 240px;
+	padding-left: 50px;
 	background-color: #E0E0E0;
 	line-height: 28px;
 }
 
 .title-archive {
 	margin: 0;
-	padding: 10px 0 10px 240px;
+	padding: 10px 0 10px 50px;
 	line-height: 1.4;
 	font-size: 21px;
 	font-weight: normal;
@@ -853,9 +853,8 @@ generic parts
 
 .list-tags-archive {
 	bottom: 0;
-	width: 385px;
 	margin: 0;
-	padding-left: 240px;
+	padding-left: 50px;
 	padding-right: 20px;
 	border-radius: 0 0 20px 0;
 	background-color: #CBCBCB;
@@ -864,6 +863,12 @@ generic parts
 	font-size: 14px;
 	line-height: 24px;
 	min-height: 24px;
+}
+
+.has-post-thumbnail .list-categories-archive,
+.has-post-thumbnail .title-archive,
+.has-post-thumbnail .list-tags-archive {
+	padding-left: 240px;
 }
 
 .list-tags-archive a {

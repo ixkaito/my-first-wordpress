@@ -36,7 +36,7 @@ function myfirstwp_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	add_image_size( 'myfirstwp-featured-image', 2000, 1200, true );
+	add_image_size( 'myfirstwp-featured-image', 190, 130, true );
 
 	add_image_size( 'myfirstwp-thumbnail-avatar', 100, 100, true );
 
