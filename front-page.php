@@ -68,24 +68,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="side-column">
-		<aside>
-			<div class="social-widgets">
-				<div class="sidebar-widget">
-					<h2 class="box-heading box-heading-side-bar">Facebook</h2>
-					<div class="box-content">
-						widget
-					</div>
-				</div>
-				<div class="sidebar-widget">
-					<h2 class="box-heading box-heading-side-bar">Twitter</h2>
-					<div class="box-content">
-						widget
-					</div>
-				</div>
-			</div>
-		</aside>
-	</div>
+
+	<?php get_sidebar(); ?>
+
 </div>
 
 <?php get_footer();
