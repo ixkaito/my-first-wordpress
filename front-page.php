@@ -7,11 +7,7 @@
 
 		<?php for ( $i = 1; $i <= 5; $i++ ) :
 
-			if ( is_a( $partial, 'WP_Customize_Partial' ) ) {
-				$id = str_replace( 'panel_', '', $partial->id );
-			}
-
-			$post = get_post( get_theme_mod( 'panel_' . $id ) );
+			$post = get_post( get_theme_mod( 'panel_' . $i ) );
 			setup_postdata( $post );
 			set_query_var( 'panel', $id ); ?>
 
