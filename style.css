@@ -732,6 +732,10 @@ generic parts
 
 }
 
+.box-content + .box-heading {
+	margin-top: 30px;
+}
+
 .box-content,
 .searchform > div,
 .calendar_wrap,
