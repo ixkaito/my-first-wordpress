@@ -143,3 +143,70 @@ function myfirstwp_scripts() {
 	wp_enqueue_style( 'myfirstwp-style', get_stylesheet_uri() );
 }
 add_action( 'wp_enqueue_scripts', 'myfirstwp_scripts' );
+
+/**
+ * Add postMessage support for site title and description for the Theme Customizer.
+ *
+ * @param WP_Customize_Manager $wp_customize Theme Customizer object.
+ */
+function myfirstwp_customize_register( $wp_customize ) {
+
+	/**
+	 * Theme options.
+	 */
+	$wp_customize->add_section( 'theme_options', array(
+		'title'    => __( 'Theme Options', 'myfirstwp' ),
+		'priority' => 130, // Before Additional CSS.
+	) );
+
+	// $wp_customize->add_setting( 'page_layout', array(
+	// 	'default'           => 'two-column',
+	// 	'sanitize_callback' => 'myfirstwp_sanitize_page_layout',
+	// 	'transport'         => 'postMessage',
+	// ) );
+
+	// $wp_customize->add_control( 'page_layout', array(
+	// 	'label'           => __( 'Page Layout', 'myfirstwp' ),
+	// 	'section'         => 'theme_options',
+	// 	'type'            => 'radio',
+	// 	'description'     => __( 'When the two column layout is assigned, the page title is in one column and content is in the other.', 'myfirstwp' ),
+	// 	'choices'         => array(
+	// 		'one-column'      => __( 'One Column', 'myfirstwp' ),
+	// 		'two-column'      => __( 'Two Column', 'myfirstwp' ),
+	// 	),
+	// 	'active_callback' => 'myfirstwp_is_view_with_layout_option',
+	// ) );
+
+	// Create a setting and control for each of the sections available in the theme.
+	for ( $i = 1; $i <= 5; $i++ ) {
+		$wp_customize->add_setting( 'panel_' . $i, array(
+			'default'           => false,
+			'sanitize_callback' => 'absint',
+			'transport'         => 'postMessage',
+		) );
+
+		$wp_customize->add_control( 'panel_' . $i, array(
+			/* translators: %d is the front page section number */
+			'label'           => sprintf( __( 'Front Page Section %d Content', 'myfirstwp' ), $i ),
+			'description'     => ( 1 !== $i ? '' : __( 'Select pages to feature in each area from the dropdowns. Add an image to a section by setting a featured image in the page editor. Empty sections will not be displayed.', 'myfirstwp' ) ),
+			'section'         => 'theme_options',
+			'type'            => 'dropdown-pages',
+			'allow_addition'  => true,
+			'active_callback' => 'myfirstwp_is_static_front_page',
+		) );
+
+		$wp_customize->selective_refresh->add_partial( 'panel_' . $i, array(
+			'selector'            => '#panel' . $i,
+			// 'render_callback'     => 'myfirstwp_front_page_section',
+			'container_inclusive' => true,
+		) );
+	}
+}
+add_action( 'customize_register', 'myfirstwp_customize_register' );
+
+/**
+ * Return whether we're previewing the front page and it's a static page.
+ */
+function myfirstwp_is_static_front_page() {
+	return ( is_front_page() && ! is_home() );
+}
