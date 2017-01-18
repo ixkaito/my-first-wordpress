@@ -17,14 +17,19 @@
 
 				<div class="box-content">
 
-					<?php if ( get_the_ID() === (int) get_option( 'page_for_posts' ) ) :
+					<?php
+
+					$blog_posts_page_id = get_the_ID();
+
+					if ( $blog_posts_page_id === (int) get_option( 'page_for_posts' ) ) :
 
 						$recent_posts = new WP_Query( array(
 							'posts_per_page'      => 5,
 							'post_status'         => 'publish',
 							'ignore_sticky_posts' => true,
 							'no_found_rows'       => true,
-						) ); ?>
+						) );
+					?>
 
 						<?php if ( $recent_posts->have_posts() ) : ?>
 
@@ -55,10 +60,16 @@
 
 							</ul>
 
+							<div class="nav-to-archives">
+								<a href="<?php the_permalink( $blog_posts_page_id ); ?>"><?php _e( 'Continue reading', 'myfirstwp' ); ?><img class="arrow" src="<?php echo esc_url( get_theme_file_uri() ); ?>/images/arrow-right.png" srcset="<?php echo esc_url( get_theme_file_uri() ); ?>/images/arrow-right@2x.png 2x" alt=""></a>
+							</div>
+
 						<?php endif; ?>
 
 					<?php else : ?>
+
 						<?php the_content(); ?>
+
 					<?php endif; ?>
 				</div>
 
