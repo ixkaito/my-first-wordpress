@@ -15,7 +15,7 @@
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<h2 class="box-heading"><?php single_post_title(); ?></h2>
 			<?php else : ?>
-				<h2 class="box-heading"><?php _e( 'Posts', 'firstwp' ); ?></h2>
+				<h2 class="box-heading"><?php _e( 'Posts', 'myfirstwp' ); ?></h2>
 			<?php endif; ?>
 
 			<div class="box-content">
