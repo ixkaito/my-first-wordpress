@@ -20,8 +20,9 @@
 					<?php if ( get_the_ID() === (int) get_option( 'page_for_posts' ) ) :
 
 						$recent_posts = new WP_Query( array(
-							'post_status'   => 'publish',
-							'no_found_rows' => true,
+							'posts_per_page' => 5,
+							'post_status'    => 'publish',
+							'no_found_rows'  => true,
 						) ); ?>
 
 						<?php if ( $recent_posts->have_posts() ) : ?>
