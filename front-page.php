@@ -35,8 +35,9 @@
 
 							<ul class="archive">
 
-								<?php while ( $recent_posts->have_posts() ) :
-									$recent_posts->the_post(); ?>
+								<?php while ( $recent_posts->have_posts() ) : ?>
+
+									<?php $recent_posts->the_post(); ?>
 
 									<li class="item-archive<?php echo get_the_post_thumbnail() ? ' has-post-thumbnail' : ''; ?>">
 										<div class="time-and-thumb-archive">

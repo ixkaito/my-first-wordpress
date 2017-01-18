@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<?php while ( have_posts() ) : the_post(); ?>
+<?php while ( have_posts() ) : ?>
+
+	<?php the_post(); ?>
 
 	<?php if ( get_the_post_thumbnail() ) : ?>
 		<div class="hero eyecatch">

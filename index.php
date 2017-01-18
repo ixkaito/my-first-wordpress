@@ -24,7 +24,9 @@
 
 					<ul class="archive">
 
-						<?php while ( have_posts() ) : the_post(); ?>
+						<?php while ( have_posts() ) : ?>
+
+							<?php the_post(); ?>
 
 							<li class="item-archive<?php echo get_the_post_thumbnail() ? ' has-post-thumbnail' : ''; ?>">
 								<div class="time-and-thumb-archive">
