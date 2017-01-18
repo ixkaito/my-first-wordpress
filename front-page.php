@@ -5,21 +5,25 @@
 <div class="content-area has-side-col">
 	<div class="main-column">
 
-		<?php for ( $i = 1; $i <= 5; $i++ ) :
+		<?php for ( $i = 1; $i <= 5; $i++ ) : ?>
 
-			$post = get_post( get_theme_mod( 'panel_' . $i ) );
-			setup_postdata( $post );
-			set_query_var( 'panel', $id ); ?>
+			<?php if ( get_theme_mod( 'panel_' . $i ) ) :
 
-			<h2 class="box-heading"><?php the_title(); ?></h2>
+				$post = get_post( get_theme_mod( 'panel_' . $i ) );
+				setup_postdata( $post );
+				set_query_var( 'panel', $i ); ?>
 
-			<div class="box-content">
-				<?php the_content(); ?>
-			</div>
+				<h2 class="box-heading"><?php the_title(); ?></h2>
 
-			<?php wp_reset_postdata();
+				<div class="box-content">
+					<?php the_content(); ?>
+				</div>
 
-		endfor; ?>
+				<?php wp_reset_postdata(); ?>
+
+			<?php endif; ?>
+
+		<?php endfor; ?>
 
 	</div>
 

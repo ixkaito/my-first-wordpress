@@ -32,7 +32,7 @@
 			<div class="box-content radius-tl">
 				(JetPackが生成するギャラリー)
 			</div>
-			
+
 			<div class="wp-pagenavi">
 				<a href="#" class="previouspostslink" rel="prev "><img class="arrow" src="images/arrow-left.png" srcset="images/arrow-left@2x.png 2x" alt=""></a>
 				<a class="page larger" href="#">1</a>
@@ -47,7 +47,7 @@
 				<a href="#" class="nextpostlink" rel="next "><img class="arrow" src="images/arrow-right.png" srcset="images/arrow-right@2x.png 2x" alt=""></a>
 			</div>
 		</div>
-		
+
 	</div>
 	<footer class="page-footer">
 		<div class="banner-area">
