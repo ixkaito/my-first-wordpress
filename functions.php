@@ -159,24 +159,6 @@ function myfirstwp_customize_register( $wp_customize ) {
 		'priority' => 130, // Before Additional CSS.
 	) );
 
-	// $wp_customize->add_setting( 'page_layout', array(
-	// 	'default'           => 'two-column',
-	// 	'sanitize_callback' => 'myfirstwp_sanitize_page_layout',
-	// 	'transport'         => 'postMessage',
-	// ) );
-
-	// $wp_customize->add_control( 'page_layout', array(
-	// 	'label'           => __( 'Page Layout', 'myfirstwp' ),
-	// 	'section'         => 'theme_options',
-	// 	'type'            => 'radio',
-	// 	'description'     => __( 'When the two column layout is assigned, the page title is in one column and content is in the other.', 'myfirstwp' ),
-	// 	'choices'         => array(
-	// 		'one-column'      => __( 'One Column', 'myfirstwp' ),
-	// 		'two-column'      => __( 'Two Column', 'myfirstwp' ),
-	// 	),
-	// 	'active_callback' => 'myfirstwp_is_view_with_layout_option',
-	// ) );
-
 	// Create a setting and control for each of the sections available in the theme.
 	for ( $i = 1; $i <= 5; $i++ ) {
 		$wp_customize->add_setting( 'panel_' . $i, array(
@@ -197,7 +179,6 @@ function myfirstwp_customize_register( $wp_customize ) {
 
 		$wp_customize->selective_refresh->add_partial( 'panel_' . $i, array(
 			'selector'            => '#panel' . $i,
-			// 'render_callback'     => 'myfirstwp_front_page_section',
 			'container_inclusive' => true,
 		) );
 	}
