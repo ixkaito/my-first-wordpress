@@ -1025,8 +1025,7 @@ generic parts
 header and global-nav
 =======================================================*/
 
-.header-area {
-	min-height: 110px;
+.page-header {
 	background-color: #707070;
 	position: relative;
 	display: flex;
@@ -1036,7 +1035,7 @@ header and global-nav
 }
 
 .panel-site-title {
-	position: relative;
+	position: absolute;
 	z-index: 1;
 	padding: 40px 0 0 40px;
 	background-color: #E0E0E0;
@@ -1044,6 +1043,10 @@ header and global-nav
 	text-align: center;
 	font-feature-settings : "palt";
 	margin-bottom: -10px;
+}
+
+.has-nav-menu .panel-site-title {
+	position: relative;
 }
 
 .panel-site-title:before {
