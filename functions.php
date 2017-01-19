@@ -191,3 +191,14 @@ add_action( 'customize_register', 'myfirstwp_customize_register' );
 function myfirstwp_is_static_front_page() {
 	return ( is_front_page() && ! is_home() );
 }
+
+/**
+ * Use front-page.php when Front page displays is set to a static page.
+ *
+ * @param string $template front-page.php.
+ * @return string The template to be used: blank if is_home() is true (defaults to index.php), else $template.
+ */
+function myfirstwp_front_page_template( $template ) {
+	return is_home() ? '' : $template;
+}
+add_filter( 'frontpage_template',  'myfirstwp_front_page_template' );
