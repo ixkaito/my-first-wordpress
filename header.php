@@ -9,7 +9,7 @@
 
 <body <?php body_class(); ?>>
 
-	<header class="page-header<?php echo has_nav_menu( 'global' ) ? ' has-nav-menu' : ''; ?>">
+	<header class="page-header">
 
 		<div class="panel-site-title">
 			<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
